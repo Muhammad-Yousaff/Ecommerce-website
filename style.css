@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif; 
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+body {
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px; 
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    z-index: 999;
+    position: sticky;
+    top: 0;  
+    left: 0; 
+    width: 100%;
+}
+
+
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px; 
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600px;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+#navbar li a:hover {
+
+    color: #088178;
+}
+
+#hero {
+    background-image: url("product/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 20% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+
+    padding-bottom: 15px;
+     
+}
+#hero h1{
+    color: #088178;
+}
+ 
+#hero button{
+
+background-image: url(product/button.png);
+background-color: transparent;
+color: #088178;
+border: 0;
+padding: 14px 80px 14px 65px;
+background-repeat: no-repeat;
+cursor: pointer;
+font-weight: 700px;
+font-size: 15px;
+}
+
+#feature {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 40px 80px; 
+    flex-wrap: wrap;
+}
+.fre-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #cce7d0;
+    margin: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.fre-box:hover {
+    transform: scale(1.05); 
+}
+
+.fre-box img {
+    width: 60px; 
+    margin-bottom: 15px;
+}
+
+.fre-box h6 {
+    font-size: 16px;
+    color: #333;
+}
+#production {
+    text-align: center;
+  }
+ .pro-container{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 40px 80px; 
+    flex-wrap: wrap;
+
+
+  }
+
+
+
+
+  .por {
+    width: 250px; /* Set fixed width, or use 'min-width' if a smaller width is acceptable */
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.02);
+    margin: 15px;
+    transition: 0.2s ease; /* Fixed transition syntax */
+  }
+
+
+  
+  .por img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .por:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Fixed box-shadow syntax */
+    transform: scale(1.05); /* Optional: adds a slight zoom effect */
+  }
+  .por .des i{
+
+font-size: 12px;
+color: rgb(243, 185, 25);
+
+  }
+  #production.pro-container{
+
+  display: flex;
+justify-content: space-between;
+padding-top: 20px;
+flex-wrap: wrap;
+ 
+  }
+  .por i.fa-cart-shopping {
+    font-size: 24px;
+    color: #088178;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.all{
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+     
+
+}
+
