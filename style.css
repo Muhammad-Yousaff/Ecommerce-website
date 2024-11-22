@@ -94,7 +94,7 @@ body {
 background-image: url(product/button.png);
 background-color: transparent;
 color: #088178;
-border: 0;
+border: 0;  
 padding: 14px 80px 14px 65px;
 background-repeat: no-repeat;
 cursor: pointer;
@@ -205,4 +205,554 @@ flex-wrap: wrap;
      
 
 }
+ #banner{
 
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-image: url(Banner/b2.jpg);
+width: 100%;
+height: 40vh;
+background-size: cover;
+background-position: center;
+
+
+}
+#banner h4{
+color: #fff;
+font-size: 16px;
+
+
+
+}
+#banner h4{
+    color: #fff;
+    font-size: 30px;
+   padding: 10px 0;
+}
+  
+  /* Overall Section Styling for #sm-banner */
+#sm-banner {
+    display: flex;
+    flex-direction: row;  /* Layout in a row */
+    justify-content: space-between;  /* Space out the banners evenly */
+    align-items: center;  /* Vertically align the banners */
+    flex-wrap: wrap;  /* Allow wrapping if the screen is smaller */
+    padding: 50px;  /* Padding around the content */
+    background-color: #f4f4f4;  /* Light grey background */
+    gap: 10px;  /* Space between each .banner-box */
+}
+
+/* Styling for the banner-box */
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;  /* Vertical layout for content inside the box */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('Banner/b17.jpg');  /* Default background image */
+    background-size: cover;  /* Cover the entire area */
+    background-position: center;  /* Center the background image */
+    min-width: 700px;  /* Ensures the box has a minimum width */
+    max-width: 580px;  /* Max width for larger screens */
+    height: 50vh;  /* Responsive height (50% of the viewport) */
+    padding: 20px;  /* Padding inside the banner */
+    border-radius: 10px;  /* Smooth rounded corners */
+    color: white;  /* White text */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
+    transition: transform 0.3s ease;  /* Smooth transition on hover */
+}
+
+/* Hover effect for the banner box */
+#sm-banner .banner-box:hover {
+    transform: scale(1.05);  /* Slightly enlarge the banner box on hover */
+}
+
+/* Styling for <h4> element (subtitle: crazy deals) */
+#sm-banner .banner-box h4 {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;  /* Space below the heading */
+}
+
+/* Styling for <h2> element (main title: by 1 get 1 free) */
+#sm-banner .banner-box h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Styling for <span> element (description) */
+#sm-banner .banner-box span {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;  /* Line height for better readability */
+}
+
+/* Styling for the button */
+#sm-banner .banner-box button {
+    padding: 12px 30px;  /* Padding for the button */
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ff6347;  /* Tomato red background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+#sm-banner .banner-box button:hover {
+    background-color: #e53e36;  /* Darker red on hover */
+    transform: scale(1.05);  /* Slightly enlarge the button on hover */
+}
+
+/* Specific background for the second banner box */
+#sm-banner .banner-box2{
+    background-image: url('Banner/b10.jpg');  /* Set background for .banner-box2 */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #sm-banner {
+        flex-direction: column;  /* Stack content vertically on small screens */
+        align-items: center;  /* Center the items */
+        padding: 30px;
+        gap: 15px;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;  /* Set the minimum width to 100% on small screens */
+        max-width: 90%;  /* Set max-width to 90% */
+        height: auto;  /* Allow the height to adjust based on content */
+    }
+
+    #sm-banner .banner-box h2 {
+        font-size: 28px;  /* Adjust font size for smaller screens */
+    }
+
+    #sm-banner .banner-box span {
+        font-size: 16px;  /* Smaller font for description */
+    }
+}
+
+/* Banner3 Section */
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px; /* Padding for larger screens */
+}
+
+/* Styling for each banner box */
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  /* Align text to center */
+    background-image: url('Banner/b7.jpg');  /* Default background image */
+    background-size: cover;  /* Make background cover the area */
+    background-position: center;  /* Center the background */
+    min-width: 200px;  /* Set a minimum width */
+    max-width: 30%;  /* Max width to ensure banner doesn't grow too large */
+    height: 30vh;  /* Responsive height */
+    padding: 20px;  /* Padding inside the banner box */
+    border-radius: 10px;  /* Rounded corners */
+    margin-bottom: 20px;  /* Corrected margin-bottom syntax */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Subtle shadow effect */
+}
+
+/* Heading inside the banner box */
+#banner3 h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;  /* Space below the heading */
+}
+
+#banner3 h3 {
+    color: #e53e36;  /* Tomato red color */
+    font-weight: 800;
+    font-size: 15px;  /* Adjusted font size */
+    text-transform: uppercase;  /* Uppercase for emphasis */
+    margin-bottom: 10px;  /* Space below the heading */
+}
+
+/* Styling for the button inside the banner box */
+#banner3 button {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ff6347; /* Tomato red color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+#banner3 button:hover {
+    background-color: #e53e36;  /* Darker red on hover */
+    transform: scale(1.05);  /* Slightly enlarge the button on hover */
+}
+
+/* Specific background for banner-box2 */
+#banner3 .banner-box2 {
+    background-image: url('Banner/b18.jpg');  /* Custom background for box2 */
+}
+
+/* Specific background for banner-box3 */
+#banner3 .banner-box3 {
+    background-image: url('Banner/b4 1.jpg');  /* Custom background for box3 */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #banner3 {
+        padding: 0 20px;  /* Reduce padding on smaller screens */
+        flex-direction: column;  /* Stack banners vertically */
+        align-items: center;  /* Center the banners */
+    }
+
+    #banner3 .banner-box {
+        min-width: 100%;  /* Set minimum width to 100% */
+        max-width: 100%;  /* Set maximum width to 100% */
+        height: auto;  /* Allow height to adjust based on content */
+        margin-bottom: 15px;  /* Space between the banners */
+    }
+
+    #banner3 h2 {
+        font-size: 20px;  /* Adjust font size for smaller screens */
+    }
+
+    #banner3 h3 {
+        font-size: 14px;  /* Adjust font size for smaller screens */
+    }
+
+    #banner3 button {
+        font-size: 14px;  /* Adjust button font size for smaller screens */
+    }
+}
+
+/* Newsletter Section */
+#newsletter {
+    display: flex;
+    justify-content: space-between; /* Distributes the content across the section */
+    align-items: center; /* Aligns content vertically */
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+    background-image: url('Banner/b14.png'); /* Background image */
+    background-repeat: no-repeat; /* Prevents background image from repeating */
+    background-position: 20% 30%; /* Positions the background image */
+    background-color: #041e42; /* Fallback background color */
+    padding: 40px 80px; /* Padding around the content */
+}
+
+/* Styling for the newsletter text */
+#newsletter .newstext {
+    color: white; /* Text color */
+    max-width: 50%; /* Limits the width of the text */
+}
+
+/* Heading inside the newsletter */
+#newsletter .newstext h4 {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Paragraph inside the newsletter */
+#newsletter .newstext p {
+    font-size: 16px; /* Adjust font size */
+    line-height: 1.5; /* Space between lines */
+}
+
+/* Highlighting the special offer text */
+#newsletter .newstext span {
+    font-weight: bold;
+    color: #f39c12; /* Gold color for the special offer text */
+}
+
+/* Form container */
+#newsletter .form {
+    display: flex;
+    flex-direction: column; /* Stacks input and button vertically */
+    align-items: flex-start; /* Aligns the form elements to the left */
+}
+
+/* Input field styling */
+#newsletter .form input {
+    padding: 12px;
+    width: 250px;
+    margin-bottom: 10px; /* Space between input and button */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button styling */
+#newsletter .form button {
+    padding: 12px 20px;
+    background-color: #f39c12; /* Gold button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+#newsletter .form button:hover {
+    background-color: #e67e22; /* Darker gold on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    #newsletter {
+        flex-direction: column; /* Stack content vertically */
+        padding: 20px 40px; /* Reduced padding */
+    }
+
+    #newsletter .newstext {
+        max-width: 100%; /* Allow text to take full width on small screens */
+        margin-bottom: 20px; /* Add some space below the text */
+    }
+
+    #newsletter .form {
+        align-items: center; /* Center form elements */
+    }
+
+    #newsletter .form input {
+        width: 100%; /* Input field takes full width on small screens */
+        margin-bottom: 15px; /* Adjust space between input and button */
+    }
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Footer Section */
+  footer.section-p1 {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Column Styling */
+  footer .col, footer .col-install {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex: 1;
+  }
+  
+  /* Footer Logo */
+  footer .col img {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Heading */
+  footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  /* Paragraph Styling */
+  footer p {
+    font-size: 14px;
+    color: #bbb;
+    line-height: 1.5;
+  }
+  
+  /* Links Styling */
+  footer .col a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  footer .col a:hover {
+    color: #fff;
+  }
+  
+  /* Social Icons Styling */
+  footer .icon {
+    display: flex;
+    gap: 10px;
+  }
+  
+  footer .icon i {
+    font-size: 18px;
+    color: #bbb;
+    transition: color 0.3s ease;
+  }
+  
+  footer .icon i:hover {
+    color: #fff;
+  }
+  
+  /* Install App Section */
+  footer .col-install .row img {
+    width: 120px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  footer .col-install .row img:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+  /* Footer Copy Section */
+  footer .copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    footer.section-p1 {
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+    footer .col {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  /* shop page */
+
+
+/* Section Styling */
+#page-header {
+    background-image: url('Banner/b1.jpg');  
+    background-size: cover;                  
+    background-position: center;           
+    height: 40vh;     
+    width: 100%;                      
+    display: flex;                           
+    flex-direction: column;                  
+    justify-content: center;                 
+    text-align: center;                      
+    color: white;                           
+    padding: 0 20px;                         
+    box-sizing: border-box;                 
+  }
+  
+  /* Heading Styling */
+  #page-header h2 {
+    font-size: 60px;                         
+    font-weight: bold;
+    margin-bottom: 20px;                     
+    text-transform: uppercase;               
+  }
+  
+  /* Paragraph Styling */
+  #page-header p {
+    font-size: 22px;                       
+    line-height: 1.5;                        
+    margin: 0;                               
+    font-weight: lighter;                   
+  }
+  
+  @media (max-width: 768px) {
+    #page-header h2 {
+      font-size: 40px;                      
+    }
+  
+    #page-header p {
+      font-size: 18px;                      
+    }
+  
+    #page-header {
+      padding: 40px 10px;                    
+    }
+  }
+    /* Style the section that contains the pagination links */
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px; /* Spacing between the pagination items */
+  }
+  
+  /* Style the individual page number links */
+  #pagination a {
+    text-decoration: none;
+    color: #333; /* Dark color for text */
+    font-size: 18px; /* Adjust the font size */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid #ddd; /* Light border */
+  }
+  
+  /* Style for the "next" arrow icon */
+  #pagination a i {
+    font-size: 20px; /* Size for the arrow icon */
+    color: #333;
+    padding: 5px;
+    border: none;
+  }
+  
+  /* Hover effect for pagination links */
+  #pagination a:hover {
+    background-color: #007bff; /* Blue background on hover */
+    color: white; /* White text on hover */
+    border-color: #007bff; /* Blue border on hover */
+  }
+  
+  /* Optional: Active page number style */
+  #pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  #prodetails .single-pro-img{
+ width: 40%;
+ margin-right: 50px;
+
+  }
+
+  .small-img-group{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .small-img-col{
+    flex-basis:  24%;
+    cursor: pointer;
+    
+  }
