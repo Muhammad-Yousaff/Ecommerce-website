@@ -153,14 +153,14 @@ font-size: 15px;
 
 
   .por {
-    width: 250px; /* Set fixed width, or use 'min-width' if a smaller width is acceptable */
+    width: 250px; 
     padding: 10px 12px;
     border: 1px solid #cce7d0;
     cursor: pointer;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.02);
     margin: 15px;
-    transition: 0.2s ease; /* Fixed transition syntax */
+    transition: 0.2s ease; 
   }
 
 
@@ -171,8 +171,8 @@ font-size: 15px;
   }
   
   .por:hover {
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Fixed box-shadow syntax */
-    transform: scale(1.05); /* Optional: adds a slight zoom effect */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.05); 
   }
   .por .des i{
 
@@ -233,53 +233,53 @@ font-size: 16px;
    padding: 10px 0;
 }
   
-  /* Overall Section Styling for #sm-banner */
+ 
 #sm-banner {
     display: flex;
-    flex-direction: row;  /* Layout in a row */
-    justify-content: space-between;  /* Space out the banners evenly */
-    align-items: center;  /* Vertically align the banners */
-    flex-wrap: wrap;  /* Allow wrapping if the screen is smaller */
-    padding: 50px;  /* Padding around the content */
-    background-color: #f4f4f4;  /* Light grey background */
-    gap: 10px;  /* Space between each .banner-box */
+    flex-direction: row;  
+    justify-content: space-between; 
+    align-items: center;  
+    flex-wrap: wrap;  
+    padding: 50px;  
+    background-color: #f4f4f4;  
+    gap: 10px;  
 }
 
-/* Styling for the banner-box */
+
 #sm-banner .banner-box {
     display: flex;
-    flex-direction: column;  /* Vertical layout for content inside the box */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url('Banner/b17.jpg');  /* Default background image */
-    background-size: cover;  /* Cover the entire area */
-    background-position: center;  /* Center the background image */
-    min-width: 700px;  /* Ensures the box has a minimum width */
-    max-width: 580px;  /* Max width for larger screens */
-    height: 50vh;  /* Responsive height (50% of the viewport) */
-    padding: 20px;  /* Padding inside the banner */
-    border-radius: 10px;  /* Smooth rounded corners */
-    color: white;  /* White text */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);  /* Subtle shadow for depth */
-    transition: transform 0.3s ease;  /* Smooth transition on hover */
+    background-image: url('Banner/b17.jpg');  
+    background-size: cover;  
+    background-position: center; 
+    min-width: 700px;  
+    max-width: 580px;  
+    height: 50vh;  
+    padding: 20px; 
+    border-radius: 10px;
+    color: white;  
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);  
+    transition: transform 0.3s ease;  
 }
 
-/* Hover effect for the banner box */
+
 #sm-banner .banner-box:hover {
-    transform: scale(1.05);  /* Slightly enlarge the banner box on hover */
+    transform: scale(1.05);  
 }
 
-/* Styling for <h4> element (subtitle: crazy deals) */
+
 #sm-banner .banner-box h4 {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 10px;  /* Space below the heading */
+    margin-bottom: 10px; 
 }
 
-/* Styling for <h2> element (main title: by 1 get 1 free) */
+
 #sm-banner .banner-box h2 {
     font-size: 36px;
     font-weight: bold;
@@ -288,19 +288,17 @@ font-size: 16px;
     text-transform: uppercase;
 }
 
-/* Styling for <span> element (description) */
+
 #sm-banner .banner-box span {
     font-size: 18px;
     margin-bottom: 20px;
-    line-height: 1.5;  /* Line height for better readability */
+    line-height: 1.5;  
 }
 
-/* Styling for the button */
+
 #sm-banner .banner-box button {
-    padding: 12px 30px;  /* Padding for the button */
     font-size: 16px;
     font-weight: 600;
-    background-color: #ff6347;  /* Tomato red background */
     color: white;
     border: none;
     border-radius: 5px;
@@ -308,38 +306,38 @@ font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Button hover effect */
+
 #sm-banner .banner-box button:hover {
-    background-color: #e53e36;  /* Darker red on hover */
-    transform: scale(1.05);  /* Slightly enlarge the button on hover */
+    background-color: #e53e36;  
+    transform: scale(1.05);  
 }
 
-/* Specific background for the second banner box */
+
 #sm-banner .banner-box2{
-    background-image: url('Banner/b10.jpg');  /* Set background for .banner-box2 */
+    background-image: url('Banner/b10.jpg'); 
 }
 
-/* Responsive Styling */
+
 @media (max-width: 768px) {
     #sm-banner {
-        flex-direction: column;  /* Stack content vertically on small screens */
-        align-items: center;  /* Center the items */
+        flex-direction: column;  
+        align-items: center; 
         padding: 30px;
         gap: 15px;
     }
 
     #sm-banner .banner-box {
-        min-width: 100%;  /* Set the minimum width to 100% on small screens */
-        max-width: 90%;  /* Set max-width to 90% */
-        height: auto;  /* Allow the height to adjust based on content */
+        min-width: 100%;  
+        max-width: 90%;  
+        height: auto; 
     }
 
     #sm-banner .banner-box h2 {
-        font-size: 28px;  /* Adjust font size for smaller screens */
+        font-size: 28px;  
     }
 
     #sm-banner .banner-box span {
-        font-size: 16px;  /* Smaller font for description */
+        font-size: 16px; 
     }
 }
 
@@ -357,42 +355,42 @@ font-size: 16px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;  /* Align text to center */
-    background-image: url('Banner/b7.jpg');  /* Default background image */
-    background-size: cover;  /* Make background cover the area */
-    background-position: center;  /* Center the background */
-    min-width: 200px;  /* Set a minimum width */
-    max-width: 30%;  /* Max width to ensure banner doesn't grow too large */
-    height: 30vh;  /* Responsive height */
-    padding: 20px;  /* Padding inside the banner box */
-    border-radius: 10px;  /* Rounded corners */
-    margin-bottom: 20px;  /* Corrected margin-bottom syntax */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Subtle shadow effect */
+    text-align: center;  
+    background-image: url('Banner/b7.jpg'); 
+    background-size: cover;  
+    background-position: center;  
+    min-width: 200px;  
+    max-width: 30%;  
+    height: 30vh;  
+    padding: 20px;  
+    border-radius: 10px;  
+    margin-bottom: 20px;  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
 }
 
-/* Heading inside the banner box */
+
 #banner3 h2 {
     color: white;
     font-weight: bold;
     font-size: 24px;
     text-transform: uppercase;
-    margin-bottom: 10px;  /* Space below the heading */
+    margin-bottom: 10px;  
 }
 
 #banner3 h3 {
-    color: #e53e36;  /* Tomato red color */
+    color: #e53e36; 
     font-weight: 800;
-    font-size: 15px;  /* Adjusted font size */
-    text-transform: uppercase;  /* Uppercase for emphasis */
-    margin-bottom: 10px;  /* Space below the heading */
+    font-size: 15px; 
+    text-transform: uppercase;  
+    margin-bottom: 10px;  
 }
 
-/* Styling for the button inside the banner box */
+
 #banner3 button {
     padding: 12px 30px;
     font-size: 16px;
     font-weight: 600;
-    background-color: #ff6347; /* Tomato red color */
+    background-color: #ff6347; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -400,111 +398,105 @@ font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Button hover effect */
 #banner3 button:hover {
-    background-color: #e53e36;  /* Darker red on hover */
-    transform: scale(1.05);  /* Slightly enlarge the button on hover */
+    background-color: #e53e36;  
+    transform: scale(1.05);  
 }
 
-/* Specific background for banner-box2 */
+
 #banner3 .banner-box2 {
-    background-image: url('Banner/b18.jpg');  /* Custom background for box2 */
+    background-image: url('Banner/b18.jpg'); 
 }
 
-/* Specific background for banner-box3 */
+
 #banner3 .banner-box3 {
-    background-image: url('Banner/b4 1.jpg');  /* Custom background for box3 */
+    background-image: url('Banner/b4 1.jpg');  
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     #banner3 {
-        padding: 0 20px;  /* Reduce padding on smaller screens */
-        flex-direction: column;  /* Stack banners vertically */
-        align-items: center;  /* Center the banners */
+        padding: 0 20px;  
+        flex-direction: column;  
+        align-items: center;  
     }
 
     #banner3 .banner-box {
-        min-width: 100%;  /* Set minimum width to 100% */
-        max-width: 100%;  /* Set maximum width to 100% */
-        height: auto;  /* Allow height to adjust based on content */
-        margin-bottom: 15px;  /* Space between the banners */
+        min-width: 100%;  
+        max-width: 100%; 
+        height: auto;  
+        margin-bottom: 15px;  
     }
 
     #banner3 h2 {
-        font-size: 20px;  /* Adjust font size for smaller screens */
+        font-size: 20px;  
     }
 
     #banner3 h3 {
-        font-size: 14px;  /* Adjust font size for smaller screens */
+        font-size: 14px; 
     }
 
     #banner3 button {
-        font-size: 14px;  /* Adjust button font size for smaller screens */
+        font-size: 14px;  
     }
 }
 
-/* Newsletter Section */
+
 #newsletter {
     display: flex;
-    justify-content: space-between; /* Distributes the content across the section */
-    align-items: center; /* Aligns content vertically */
-    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
-    background-image: url('Banner/b14.png'); /* Background image */
-    background-repeat: no-repeat; /* Prevents background image from repeating */
-    background-position: 20% 30%; /* Positions the background image */
-    background-color: #041e42; /* Fallback background color */
-    padding: 40px 80px; /* Padding around the content */
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
+    background-image: url('Banner/b14.png');
+    background-repeat: no-repeat; 
+    background-position: 20% 30%; 
+    background-color: #041e42; 
+    padding: 40px 80px; 
 }
 
-/* Styling for the newsletter text */
 #newsletter .newstext {
-    color: white; /* Text color */
-    max-width: 50%; /* Limits the width of the text */
+    color: white; 
+    max-width: 50%; 
 }
-
-/* Heading inside the newsletter */
 #newsletter .newstext h4 {
-    font-size: 24px; /* Adjust font size */
+    font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-/* Paragraph inside the newsletter */
+
 #newsletter .newstext p {
-    font-size: 16px; /* Adjust font size */
-    line-height: 1.5; /* Space between lines */
+    font-size: 16px; 
+    line-height: 1.5; 
 }
 
-/* Highlighting the special offer text */
 #newsletter .newstext span {
     font-weight: bold;
-    color: #f39c12; /* Gold color for the special offer text */
+    color: #f39c12; 
 }
 
-/* Form container */
+
 #newsletter .form {
     display: flex;
-    flex-direction: column; /* Stacks input and button vertically */
-    align-items: flex-start; /* Aligns the form elements to the left */
+    flex-direction: column; 
+    align-items: flex-start; 
 }
 
-/* Input field styling */
+
 #newsletter .form input {
     padding: 12px;
     width: 250px;
-    margin-bottom: 10px; /* Space between input and button */
+    margin-bottom: 10px; 
     border-radius: 5px;
     border: 1px solid #ddd;
     font-size: 14px;
     color: #333;
 }
 
-/* Button styling */
+
 #newsletter .form button {
     padding: 12px 20px;
-    background-color: #f39c12; /* Gold button background */
+    background-color: #f39c12; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -513,41 +505,41 @@ font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Button hover effect */
+
 #newsletter .form button:hover {
-    background-color: #e67e22; /* Darker gold on hover */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
+    background-color: #e67e22; 
+    transform: scale(1.05);
 }
 
-/* Responsive Design for smaller screens */
+
 @media (max-width: 768px) {
     #newsletter {
-        flex-direction: column; /* Stack content vertically */
-        padding: 20px 40px; /* Reduced padding */
+        flex-direction: column; 
+        padding: 20px 40px; 
     }
 
     #newsletter .newstext {
-        max-width: 100%; /* Allow text to take full width on small screens */
-        margin-bottom: 20px; /* Add some space below the text */
+        max-width: 100%; 
+        margin-bottom: 20px; 
     }
 
     #newsletter .form {
-        align-items: center; /* Center form elements */
+        align-items: center; 
     }
 
     #newsletter .form input {
-        width: 100%; /* Input field takes full width on small screens */
-        margin-bottom: 15px; /* Adjust space between input and button */
+        width: 100%; 
+        margin-bottom: 15px; 
     }
 }
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Footer Section */
+  
   footer.section-p1 {
     background-color: #333;
     color: #fff;
@@ -557,21 +549,20 @@ font-size: 16px;
     justify-content: space-between;
   }
   
-  /* Column Styling */
+  
   footer .col, footer .col-install {
     display: flex;
     flex-direction: column;
     padding: 20px;
     flex: 1;
   }
-  
-  /* Footer Logo */
+
   footer .col img {
     max-width: 150px;
     margin-bottom: 20px;
   }
   
-  /* Footer Heading */
+*/
   footer h4 {
     font-size: 18px;
     font-weight: bold;
@@ -586,7 +577,7 @@ font-size: 16px;
     line-height: 1.5;
   }
   
-  /* Links Styling */
+  
   footer .col a {
     color: #bbb;
     text-decoration: none;
@@ -598,7 +589,7 @@ font-size: 16px;
     color: #fff;
   }
   
-  /* Social Icons Styling */
+  
   footer .icon {
     display: flex;
     gap: 10px;
@@ -627,7 +618,7 @@ font-size: 16px;
   
 
 
-  /* Footer Copy Section */
+
   footer .copy {
     text-align: center;
     margin-top: 20px;
@@ -636,7 +627,7 @@ font-size: 16px;
   
 
 
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     footer.section-p1 {
       flex-direction: column;
@@ -651,10 +642,10 @@ font-size: 16px;
   }
   
 
-  /* shop page */
+ 
 
 
-/* Section Styling */
+
 #page-header {
     background-image: url('Banner/b1.jpg');  
     background-size: cover;                  
@@ -670,7 +661,6 @@ font-size: 16px;
     box-sizing: border-box;                 
   }
   
-  /* Heading Styling */
   #page-header h2 {
     font-size: 60px;                         
     font-weight: bold;
@@ -678,7 +668,7 @@ font-size: 16px;
     text-transform: uppercase;               
   }
   
-  /* Paragraph Styling */
+ 
   #page-header p {
     font-size: 22px;                       
     line-height: 1.5;                        
@@ -699,42 +689,38 @@ font-size: 16px;
       padding: 40px 10px;                    
     }
   }
-    /* Style the section that contains the pagination links */
+    
 #pagination {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    gap: 10px; /* Spacing between the pagination items */
+    gap: 10px; 
   }
   
-  /* Style the individual page number links */
+ 
   #pagination a {
     text-decoration: none;
-    color: #333; /* Dark color for text */
-    font-size: 18px; /* Adjust the font size */
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    border: 1px solid #ddd; /* Light border */
+    color: #333; 
+    font-size: 18px; 
   }
   
-  /* Style for the "next" arrow icon */
+ 
   #pagination a i {
-    font-size: 20px; /* Size for the arrow icon */
+    font-size: 20px; 
     color: #333;
     padding: 5px;
     border: none;
   }
   
-  /* Hover effect for pagination links */
+  
   #pagination a:hover {
-    background-color: #007bff; /* Blue background on hover */
-    color: white; /* White text on hover */
-    border-color: #007bff; /* Blue border on hover */
+    background-color: #007bff; 
+    color: white; 
+    border-color: #007bff; 
   }
   
-  /* Optional: Active page number style */
+
   #pagination a.active {
     background-color: #007bff;
     color: white;
@@ -756,3 +742,471 @@ font-size: 16px;
     cursor: pointer;
     
   }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h4, h2, h6 {
+  color: #333;
+  margin: 0;
+}
+
+
+#production {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#production h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#production h4 {
+  font-size: 20px;
+  color: #555;
+}
+
+
+.prodetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+
+.single-pro-img {
+  width: 50%;
+  position: relative;
+}
+
+#MainImg {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.small-img-group {
+  display: flex;
+  margin-top: 15px;
+}
+
+.small-img-col {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.small-img-col img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.small-img-col img:hover {
+  transform: scale(1.1);
+}
+
+
+.single-pro-details {
+  width: 45%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.single-pro-details h6 {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.single-pro-details h4 {
+  font-size: 26px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.single-pro-details h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #e67e22;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: pointer;
+}
+
+select option {
+  padding: 10px;
+}
+
+input[type="number"] {
+  width: 60px;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #e67e22;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #d35400;
+}
+
+h4 + span {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .prodetails {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .single-pro-img, .single-pro-details {
+      width: 100%;
+  }
+
+  .small-img-group {
+      justify-content: center;
+  }
+
+  .small-img-col {
+      width: 30%;
+      margin-right: 10px;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+
+
+.blog-header {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url('Banner/b19.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.blog-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.blog-header p {
+  font-size: 1.2rem;
+  color: white;
+}
+ 
+#blog {
+  display: flex;
+  flex-direction: column;  
+  gap: 30px;  
+  padding: 0 20px;
+  margin: 0 auto; 
+  max-width: 1200px;  
+  align-items: center; 
+}
+
+
+.blog-box {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;  
+  flex-direction: row;  
+  max-width: 800px; 
+  padding: 15px;
+  gap: 20px; 
+}
+
+.blog-box:hover {
+  transform: translateY(-10px);  
+}
+
+.blog-img {
+  width: 50%; 
+  height: 250px;  
+  margin-right: 20px;  
+}
+
+.blog-img img {
+  width: 100%;
+  height: 100%;
+}
+.blog-detail {
+  flex-grow: 1;  
+  padding: 10px;
+  margin-left: 10px;  
+}
+
+.blog-detail h4 {
+  font-size: 1.2rem; 
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.blog-detail p {
+  font-size: 0.9rem; 
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;  
+}
+
+.blog-detail a {
+  display: inline-block;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.blog-box h1 {
+  font-size: 1rem; 
+  color: #333;
+  padding: 5px 10px;
+  background-color: #f9f9f9;
+  text-align: center;
+  margin-top: 0;
+}
+
+
+@media (max-width: 1024px) {
+  #blog {
+      flex-direction: column;
+  }
+
+  .blog-box {
+      flex-direction: column;  
+  }
+
+  .blog-img {
+      width: 100%; 
+      height: 200px;  
+      margin-right: 0;  
+  }
+}
+
+@media (max-width: 768px) {
+  #blog {
+      flex-direction: column;
+  }
+
+  .blog-box {
+      flex-direction: column; 
+  }
+
+  .blog-img {
+      width: 100%;  
+      height: 200px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-header h2 {
+      font-size: 2rem;
+  }
+
+  .blog-header p {
+      font-size: 1rem;
+  }
+
+  .blog-detail h4 {
+      font-size: 1.2rem;
+  }
+}
+
+
+#pagination.section-p1 {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px; 
+}
+
+.page-link {
+  text-decoration: none;
+  color: #555; 
+  font-size: 16px; 
+  padding: 10px 15px; 
+  border: 1px solid #ddd;
+  border-radius: 5px; 
+  transition: background-color 0.3s ease; 
+}
+
+.page-link:hover {
+  background-color: #f0f0f0; 
+}
+
+.page-link.active {
+  background-color: #007bff;
+  color: white; 
+  border-color: #007bff; 
+}
+
+.next-link {
+  text-decoration: none;
+  color: #555; 
+  font-size: 20px; 
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0; 
+  transition: background-color 0.3s ease;
+}
+
+.next-link:hover {
+  background-color: #e0e0e0; 
+}
+
+.next-link i {
+  font-size: 18px; 
+}
+#page-header.About-header{
+
+
+background-image: url("About/banner.png");
+
+}
+#page-header.About-header{
+
+color: #ccc;
+
+
+}
+
+.marquee {
+  background-color: #ccc;
+  color: #333;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.marquee::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: marqueeAnimation 10s linear infinite;
+}
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+#About-head{
+  display: flex;
+  align-items: center;
+}
+#About-head img{
+
+ width: 50%;
+ height: auto;
+
+}
+#About-head div{
+
+  padding-left: 40px;
+}
+.tooltip-text {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-text::after {
+  content: "The best version of yourself. Ultimately, success is a journey, not a destination, and every step along the way counts.";
+  position: absolute;
+  top: 100%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  width: max-content;
+  max-width: 250px;
+  font-size: 12px;
+}
+
+.tooltip-text:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip-text {
+  position: relative;
+  cursor: pointer;
+  color: #007bff; /* Optional: Color the text to indicate it's interactive */
+  font-weight: bold;
+}
+
+.tooltip-text .tooltip-content {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  border-radius: 5px;
+  width: 300px; /* Adjust width as needed */
+  bottom: 120%; /* Position the tooltip above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.tooltip-text:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
