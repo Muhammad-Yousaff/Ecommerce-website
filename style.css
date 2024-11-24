@@ -1210,3 +1210,71 @@ color: #ccc;
   visibility: visible;
   opacity: 1;
 }
+/* #About-app{
+text-align: center;
+
+
+}
+#About-app video{
+width: 70%;
+height: 100%;
+margin-top: 30px auto 0 auto;
+
+
+}
+#About-app video .video{
+
+
+width: 100%;
+height: 100%;
+border-radius: 20px;
+
+
+
+} */
+
+/* Section styling */
+#About-app {
+  text-align: center;
+  padding: 50px;
+  background-color: #f4f4f4; /* Background color for the section */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title Styling */
+#About-app h1 {
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Link Styling */
+#About-app h1 a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  font-weight: normal;
+  transition: color 0.3s ease;
+}
+
+#About-app h1 a:hover {
+  color: #0056b3; /* Hover effect for the link */
+}
+
+/* Video container styling */
+#About-app .video {
+  margin-top: 30px;
+  display: inline-block; /* Ensures the video stays inline */
+  width: 100%; /* Ensures the container stretches full width */
+  max-width: 800px; /* Limits the video size */
+  border-radius: 20px; /* Rounded corners for the container */
+  overflow: hidden; /* Clips the video to fit the rounded container */
+}
+
+/* Video styling */
+#About-app video {
+  width: 100%; /* Ensures the video fills the container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 20px; /* Rounded corners for the video */
+}
