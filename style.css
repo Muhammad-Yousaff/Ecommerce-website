@@ -642,7 +642,20 @@ font-size: 16px;
   }
   
 
- 
+  #page-head {
+    background-image: url('Banner/b19.jpg');  
+    background-size: cover;                  
+    background-position: center;           
+    height: 40vh;     
+    width: 100%;                      
+    display: flex;                           
+    flex-direction: column;                  
+    justify-content: center;                 
+    text-align: center;                      
+    color: white;                           
+    padding: 0 20px;                         
+    box-sizing: border-box;                 
+  }
 
 
 
@@ -751,7 +764,7 @@ body {
 }
 
 h1, h4, h2, h6 {
-  color: #333;
+  color: white;
   margin: 0;
 }
 
@@ -911,7 +924,7 @@ h4 + span {
 }
 
 
-.blog-header {
+ .blog-header {
   text-align: center;
   padding: 50px 0;
   background-image: url('Banner/b19.jpg');
@@ -1139,6 +1152,14 @@ color: #ccc;
     transform: translateX(-100%);
   }
 }
+
+#page-header .About-header h2{
+color: white;
+ 
+
+}
+
+
 #About-head{
   display: flex;
   align-items: center;
@@ -1197,8 +1218,8 @@ color: #ccc;
   text-align: center;
   padding: 8px;
   border-radius: 5px;
-  width: 300px; /* Adjust width as needed */
-  bottom: 120%; /* Position the tooltip above the text */
+  width: 300px; 
+  bottom: 120%; 
   left: 50%;
   transform: translateX(-50%);
   transition: opacity 0.3s ease;
@@ -1250,31 +1271,298 @@ border-radius: 20px;
   margin-bottom: 20px;
 }
 
-/* Link Styling */
+
 #About-app h1 a {
-  color: #007bff; /* Link color */
-  text-decoration: none;
+  color: #007bff; 
+    text-decoration: none;
   font-weight: normal;
   transition: color 0.3s ease;
 }
 
 #About-app h1 a:hover {
-  color: #0056b3; /* Hover effect for the link */
+  color: #0056b3; 
 }
 
-/* Video container styling */
+
 #About-app .video {
   margin-top: 30px;
-  display: inline-block; /* Ensures the video stays inline */
-  width: 100%; /* Ensures the container stretches full width */
-  max-width: 800px; /* Limits the video size */
-  border-radius: 20px; /* Rounded corners for the container */
-  overflow: hidden; /* Clips the video to fit the rounded container */
+  display: inline-block; 
+  width: 100%; 
+  max-width: 800px; 
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-/* Video styling */
+
 #About-app video {
-  width: 100%; /* Ensures the video fills the container */
-  height: auto; /* Maintains aspect ratio */
-  border-radius: 20px; /* Rounded corners for the video */
+  width: 100%; 
+  height: auto;
+  border-radius: 20px; 
+}
+
+
+
+
+/* CSS file only About file  */
+
+ /* #cantact-details{
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+#cantact-details .details{
+  width: 40px;
+}
+#cantact-details span{
+  font-size: 12px;
+}
+#cantact-details .details h2{
+
+  font-size: 26px;
+  line-height: 36px;
+  padding: 20px 0;
+}
+#cantact-details .details h3{
+
+  font-size: 16px;
+  padding-bottom: 15px;
+
+}
+#cantact-details .details li{
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#cantact-details .details li i{
+
+  font-size: 14px;
+  padding-right: 22px;
+
+}
+#cantact-details .details li p{
+  margin: 0;
+  font-size: 14px;
+
+}
+#cantact-details .map{
+
+  width: 55px;
+  height: 400px;
+}
+ 
+
+
+
+#cantact-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.details {
+  flex: 1;
+  padding: 20px;
+}
+
+.details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.details li {
+  list-style: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.details i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.map {
+  flex: 1;
+  padding: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+#froms-datails {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+#froms-datails form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#froms-datails form span {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#froms-datails form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#froms-datails form input,
+#froms-datails form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#froms-datails form button {
+  background-color: #ff6347;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#froms-datails form button:hover {
+  background-color: #e5533f;
+}
+
+#froms-datails .people div{
+
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+
+}
+#froms-datails .people img{
+ width: 65px;
+ height: 65px;
+ object-fit: cover;
+ margin-right: 15px;
+
+}
+#froms-datails .people div p{
+  margin: 0%;
+  font-size: 14px;
+  line-height: 25px;
+}
+#froms-datails .people div p span{
+display: block;
+font-size: 16px;
+font-weight: 600;
+color: #000;
+
+} */
+ /* Contact Details Section */
+/* Contact Form Section */
+#froms-datails {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; /* Place items side by side */
+  align-items: flex-start; /* Align items to the top */
+}
+
+#froms-datails form {
+  flex: 1; /* Take up 50% of the space */
+  max-width: 600px;
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#froms-datails form span {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#froms-datails form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#froms-datails form input,
+#froms-datails form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#froms-datails form button {
+  background-color: #ff6347;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#froms-datails form button:hover {
+  background-color: #e5533f;
+}
+
+/* People Section */
+#froms-datails .people {
+  flex: 1; /* Take up 50% of the space */
+  display: flex;
+  flex-direction: column; /* Stack the images vertically */
+  gap: 20px; /* Space between each person */
+  padding-left: 20px; /* Space between the form and the people section */
+}
+
+#froms-datails .people div {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 25px;
+}
+
+#froms-datails .people img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 50%; /* Make images round */
+}
+
+#froms-datails .people div p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#froms-datails .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
 }
